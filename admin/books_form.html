@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ma in class="col-6 main-container">
+      <header class="mb-20">
+        <h1>Library Program</h1>
+        <span class="float-right">
+          <a href="../index.html">
+            <img src="../assets/icons8-logout-52.png" alt="logout" />
+          </a>
+        </span>
+      </header>
+      <form
+        action="/action_page"
+        method="post"
+        enctype="multipart/form-data"
+        class="form-container"
+      >
+        <label class="col-3" for="title">Title</label>
+        <input class="col-6" type="text" name="title" />
+
+        <label class="col-3" for="page">Page number</label>
+        <input class="col-6" type="number" name="page" />
+
+        <label class="col-3" for="language">Language</label>
+        <input class="col-6" type="text" name="language" />
+
+        <label class="col-3" for="author">Author</label>
+        <select class="col-8" name="autor">
+          <option value="novel">Rejtő Jenő</option>
+          <option value="comedy">Agatha Christie</option>
+          <option value="drama">Ronda Brain</option>
+        </select>
+
+        <span class="col-3 p-t-s-15" for="category">Category</span>
+        <div class="checkbox-group col-8">
+          <input type="checkbox" name="novel" />
+          <label for="novel">Novel</label>
+          <input type="checkbox" name="comedy" />
+          <label for="comedy">Comedy</label>
+          <input type="checkbox" name="drama" />
+          <label for="drama">Drama</label>
+        </div>
+
+        <span class="col-3" for="drama">Image</span>
+        <input class="col-8" type="file" name="image" />
+
+        <span class="col-3" for="book-description">Description</span>
+        <textarea class="textarea"  name="description" id="description" cols="50" rows="5">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe consectetur, corporis unde inventore molestiae consequatur suscipit earum nisi mollitia, est sunt harum, assumenda illo eius officiis. Voluptatem pariatur ea fuga!</textarea
+        >
+
+        <div class="col-12">
+          <input type="submit" value="Save" />
+          <button type="button" onclick="location.href='../index.html'">Cancel</button>
+        </div>
+      </form>
+    </ma>
+  </body>
+</html>
